@@ -13,6 +13,7 @@ namespace PortfolioCore.Context
         public DbSet<Entities.Experience> Experiences { get; set; }
         public DbSet<Entities.Message> Messages { get; set; }
         public DbSet<Entities.Testimonial> Testimonials { get; set; }
+        public DbSet<Entities.Skill> Skills { get; set; }
         
     }
 }

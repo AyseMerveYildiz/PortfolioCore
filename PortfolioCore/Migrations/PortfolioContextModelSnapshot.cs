@@ -144,6 +144,27 @@ namespace PortfolioCore.Migrations
                     b.ToTable("Messages");
                 });
 
+            modelBuilder.Entity("PortfolioCore.Entities.Skill", b =>
+                {
+                    b.Property<int>("SkillId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SkillId"), 1L, 1);
+
+                    b.Property<string>("SkillName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SkillValue")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SkillId");
+
+                    b.ToTable("Skills");
+                });
+
             modelBuilder.Entity("PortfolioCore.Entities.Testimonial", b =>
                 {
                     b.Property<int>("TestimonialId")
