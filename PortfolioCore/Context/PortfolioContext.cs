@@ -14,6 +14,8 @@ namespace PortfolioCore.Context
         public DbSet<Entities.Message> Messages { get; set; }
         public DbSet<Entities.Testimonial> Testimonials { get; set; }
         public DbSet<Entities.Skill> Skills { get; set; }
+        public DbSet<Entities.Category> Categories { get; set; }
+        public DbSet<Entities.Portfolio> Portfolios { get; set; }
         
     }
 }
