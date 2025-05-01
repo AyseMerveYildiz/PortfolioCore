@@ -1,0 +1,23 @@
+﻿@model List<SocialMedia>
+
+<footer id="footer" class="footer position-relative light-background">
+	<div class="container">
+		<h3 class="sitename">Merve YILDIZ</h3>
+		<p>İletişim için </p>
+		<div class="social-links d-flex justify-content-center">
+			@foreach (var item in Model)
+			{
+				<a href="@item.Url"><i class="@item.Icon"></i></a>
+			}
+		</div>
+		<div class="container">
+			<div class="copyright">
+				<span>copyright</span> <strong class="px-1 sitename">Merve YILDIZ</strong> <span>Tüm Hakları Saklıdır.</span>
+			</div>
+			<div class="credits">
+				
+				Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distribuited by <a href="https://themewagon.com">ThemeWagon</a>
+			</div>
+		</div>
+	</div>
+</footer>

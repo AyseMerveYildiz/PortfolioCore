@@ -1,3 +1,4 @@
+using CurrieTechnologies.Razor.SweetAlert2;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,6 +14,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404/");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

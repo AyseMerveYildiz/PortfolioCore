@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PortfolioCore.Entities;
 
 namespace PortfolioCore.Context
 {
@@ -16,6 +17,11 @@ namespace PortfolioCore.Context
         public DbSet<Entities.Skill> Skills { get; set; }
         public DbSet<Entities.Category> Categories { get; set; }
         public DbSet<Entities.Portfolio> Portfolios { get; set; }
-        
-    }
+		public DbSet<About> Abouts { get; set; }
+		public DbSet<Service> Services { get; set; }
+		public DbSet<SocialMedia> SocialMedias { get; set; }
+		public DbSet<Feature> Features { get; set; }
+
+	}
+
 }
